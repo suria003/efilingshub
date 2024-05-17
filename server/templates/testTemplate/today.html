@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recent Enquiries</title>
+</head>
+<body>
+    <h1>Today's Enquiries</h1>
+    <ul>
+        {% for today_enquiry in today_enquiries %}
+            <li>{{ today_enquiry.enquiryName }} - {{ today_enquiry.enquiryNumber }} - {{ today_enquiry.enquiryEmail }} - {{ today_enquiry.enquiryService }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Yesterday's Enquiries</h1>
+    <ul>
+        {% for yesterday_enquiry in yesterday_enquiries %}
+            <li>{{ yesterday_enquiry.enquiryName }} - {{ yesterday_enquiry.enquiryNumber }} - {{ yesterday_enquiry.enquiryEmail }} - {{ yesterday_enquiry.enquiryService }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

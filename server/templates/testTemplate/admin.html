@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <table border="1">
+        <tr>
+            <th>Enquiry Name</th>
+            <th>Enquiry Number</th>
+            <th>Enquiry Email</th>
+            <th>Enquiry Service</th>
+        </tr>
+        {% for item in data %}
+            <tr>
+                <td>{{ item.enquiryName }}</td>
+                <td>{{ item.enquiryNumber }}</td>
+                <td>{{ item.enquiryEmail }}</td>
+                <td>{{ item.enquiryService }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

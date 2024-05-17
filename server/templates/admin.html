@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eFiLiNgS HuB || Admin</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <nav class="admin-nav">
+      <header>
+        <a href="/">eFiLiNgS HuB | Admin</a>
+      </header>
+      <ul>
+        <li>
+          <a onclick="enquiryData()">Enquiry Data</a>
+        </li>
+        <li>
+          <a onclick="contactData()">Contact Data</a>
+        </li>
+        <li>
+          <a onclick="serviceData()">Service Data</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="side-container">
+      <a class="profile-icon">
+        <ion-icon name="person-sharp"></ion-icon>
+        <p>Profile</p>
+      </a>
+    </div>
+
+    <div class="data-base">
+      <div class="sessionList" id="sessionEnquiryData">
+        <h1 id="enquiryid-header">Enquiry Data-Set</h1>
+        <h3 id="enquiryid-todayEnquiries">Today Enquiries</h3>
+        <ul id="enquiryid-TodayulEnquiryData" class="enquiry-data data-set">
+          {% for today_enquiry in today_enquiries %}
+            <li>{{ today_enquiry.enquiryName }} - {{ today_enquiry.enquiryNumber }} - {{ today_enquiry.enquiryEmail }} - {{ today_enquiry.enquiryService }}</li>
+          {% endfor %}
+        </ul>
+        <h3 id="enquiryid-yesterdayEnquiries">Yesterday's Enquiries</h3>
+        <ul id="enquiryid-TodayulEnquiryData" class="enquiry-data data-set">
+          {% for yesterday_enquiry in yesterday_enquiries %}
+            <li>{{ yesterday_enquiry.enquiryName }} - {{ yesterday_enquiry.enquiryNumber }} - {{ yesterday_enquiry.enquiryEmail }} - {{ yesterday_enquiry.enquiryService }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="sessionList" id="sessionContactData">
+        <h1>Contact Data-set</h1>
+        <h3>Today Cotact data</h3>
+        <ul class="contact-data data-set">
+          {% for today_contact in today_contacts %}
+            <li>{{ today_contact.contactName }} - {{ today_contact.contactNumber }} - {{ today_contact.contactMessage }}</li>
+          {% endfor %}
+        </ul>
+        <h3>Yesterday's Contact data</h3>
+        <ul class="contact-data data-set">
+          {% for yesterday_contact in yesterday_contacts %}
+            <li>{{ yesterday_contact.contactName }} - {{ yesterday_contact.contactNumber }} - {{ yesterday_contact.contactMessage }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="sessionList" id="sessionServiceData">
+        <h1>Servcie Data-set</h1>
+        <h3>Today service data</h3>
+        <ul class="service-data data-set">
+          {% for today_service in today_services %}
+            <li>{{ today_service.serviceenquiryName }} - {{ today_service.serviceenquiryNumber }} - {{ today_service.serviceenquiryEmail }} - {{ today_service.serviceenfquiryPlan }} - {{ today_service.serviceenquiryService }}</li>
+          {% endfor %}
+        </ul>
+        <h3>Yesterday's service data</h3>
+        <ul class="service-data data-set">
+          {% for yesterday_service in yesterday_services %}
+            <li>{{ yesterday_service.serviceenquiryName }} - {{ yesterday_service.serviceenquiryNumber }} - {{ yesterday_service.serviceenquiryEmail }} - {{ yesterday_service.serviceenfquiryPlan }} - {{ yesterday_service.serviceenquiryService }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <script src=" {{ url_for('static', filename='scripts.js') }} "></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
