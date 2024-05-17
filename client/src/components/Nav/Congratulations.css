@@ -1,0 +1,36 @@
+/* Congratulations.css */
+
+.congratulations-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .congratulations-animation {
+    text-align: center;
+    padding: 40px;
+    background-color: #5cb85c; /* Green background color */
+    color: #fff; /* White text color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+  
+  .tick-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

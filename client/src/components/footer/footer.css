@@ -1,0 +1,98 @@
+.footer-container{
+    background-color: blue;
+    height: fit-content;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.line-container{
+    height: 1.5px;
+    width: 80%;
+    margin: auto;
+    background-color: black;
+}
+
+.bootmViewFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px 5px 0px;
+}
+
+.bootmViewFooter .socialIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.socialIcon ion-icon{
+    height: 25px;
+    width: 25px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.topViewFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.number-footer, .email-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.number-footer ion-icon, .email-footer ion-icon{
+    height: 26px;
+    width: 26px;
+}
+
+.footer-content-two ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.footer-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content-three ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.footer-content-three ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.aboutinfo{
+    color: white;
+}
+
+.contactInfo{
+    color: white;
+}

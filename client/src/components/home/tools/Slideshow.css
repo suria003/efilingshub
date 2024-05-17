@@ -1,0 +1,65 @@
+.slideshow-container{
+    height: 75vh;
+    width: 100%;
+    background: linear-gradient(to right, lightgreen, green);
+    align-items: center;
+}
+
+.slideshow-container .mySlides{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mySlides img{
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+    height: 55vh;
+    width: auto;
+}
+
+.mySlides .text{
+    position: relative;
+    top: 65%;
+    left: 13%;
+    transform: translate(0, -50%);
+    font-size: 65px;
+    padding: 22px 54px;
+    text-transform: uppercase;
+    width: max-content;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 0;
+}
+
+.prev{
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    color: rgba(0, 0, 0, 0.374);
+    transform: translate(0, -50%);
+    font-size: 45px;
+    cursor: pointer;
+}
+
+
+.next{
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    color: rgba(0, 0, 0, 0.374);
+    transform: translate(0, -50%);
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover{
+    outline: none;
+    color: black;
+}

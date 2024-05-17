@@ -1,0 +1,17 @@
+.Video-container{
+    height: 100vh;
+    width: 100%;
+}
+
+.Video-container video{
+    height: 100%;
+    max-width: 100%;
+}
+
+.Video-container .video-text-filter{
+    height: 28vh;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 85%;
+}

@@ -1,0 +1,173 @@
+.GSTRegistration-service {
+    height: 90vh;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+.service-template {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 100%;
+    margin-top: 50px;
+
+    .service-Overview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .revice-rating {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            h4 {
+                padding: 7px 12px;
+                background-color: green;
+                color: white;
+                font-weight: bold;
+                border: none;
+                outline: none;
+            }
+
+            h5{
+                font-size: 18px;
+            }
+        }
+
+        .service-button-container {
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.250);
+            padding: 6px 18px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            border-radius: 32px;
+
+            button {
+                font-size: 15px;
+                border-radius: 32px;
+                padding: 8px 14px;
+                border: none;
+                font-weight: bold;
+            }
+
+            /* Add the following CSS to your gstregistration.css file */
+
+            .button.active {
+                border: none;
+                background-color: green;
+                color: white;
+            }
+
+        }
+
+        .price-details-service{
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+
+                .marketPrice-content, .save-content{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                .ourprice-content{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 5px;
+                    height: fit-content;
+                    width: max-content;
+                    
+                    .pricing-details-basic{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        margin-left: 5px;
+
+                        h2{
+                            color: orange;
+                        }
+
+                        h3{
+                            margin-top: -10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .service-line{
+        height: 75vh;
+        width: .2%;
+        background-color: rgba(0, 0, 0, 0.303);
+    }
+
+    .service-enquiry {
+        height: 75vh;
+        width: 35%;
+        border: none !important;
+
+        h1{
+            font-size: 64px;
+            text-align: center;
+            color: green;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+            top: 6%;
+
+            input{
+                padding: 8px 14px;
+                font-size: 15px;
+                outline: none;
+                color: black;
+            }
+
+            #serviceRequired{
+                cursor: default;
+            }
+
+            select{
+                padding: 8px 50px;
+                font-size: 15px;
+                outline: none;
+                color: black;
+            }
+
+            button{
+                padding: 8px 52px;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: green;
+                border: 1px solid green;
+                border: none;
+                outline: none;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

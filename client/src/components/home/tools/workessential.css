@@ -1,0 +1,205 @@
+.red-work.activeOne{
+    transform: translateY(0px);
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.yellow-work.activeTwo{
+    transform: translateX(0px);
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.green-work.activeThree{
+    transform: translateY(0px);
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.workBackground-container {
+    margin-top: 55px;
+    height: 100vh;
+    width: 100%;
+}
+
+.workBackground-container .work-text {
+    text-align: center;
+    font-size: 60px;
+    font-family: monospace;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.red-work {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    position: relative;
+    top: 36%;
+    left: 10%;
+    outline: 20px solid rgba(0, 0, 0, 0.366);
+    box-shadow: 3px 3px 3px solid black;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.red-work:hover {
+    text-shadow: 2px 2px 4px rgb(255, 254, 254);
+    transition: all 1s ease;
+}
+
+.red-work:hover .logo-style-work {
+    transition: all 1s ease;
+    text-shadow: 4px 4px 4px white;
+}
+
+.logo-style-work {
+    height: 100%;
+    width: 100%;
+}
+
+.logo-style-work img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.red-drop-content {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: -40%;
+    min-width: 500px;
+    text-align: justify;
+    z-index: 1;
+}
+
+.red-drop-content h1{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5), -2px -2px 4px rgba(255, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+.red-drop-content div{
+    color: black;
+}
+
+.red-work:hover .red-drop-content{
+    display: block;
+    transition: all 2s ease-in;
+}
+
+.red-work .line-red-work {
+    position: relative;
+    top: -45%;
+    left: 107%;
+    height: 4px;
+    width: 70%;
+    background: linear-gradient(to right, red, yellow, green);
+}
+
+.yellow-work{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    position: relative;
+    top: 3%;
+    left: 42%;
+    outline: 20px solid rgba(0, 0, 0, 0.366);
+    box-shadow: 3px 3px 3px solid black;
+    filter: brightness(20px);
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.yellow-work:hover {
+    background-color: rgba(255, 255, 0, 0.378);
+    text-shadow: 2px 2px 4px rgb(255, 254, 254);
+    transition: all 1s ease;
+}
+
+.yellow-work .yellow-drop-content{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: -0%;
+    color: black;
+    min-width: 500px;
+    text-align: justify;
+    z-index: 1;
+}
+
+
+.yellow-drop-content h1{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(255, 255, 0, 0.5), -2px -2px 4px rgba(255, 255, 0, 0.5);
+    text-decoration: underline;
+}
+
+.yellow-drop-content div{
+    color: black;
+}
+
+.yellow-work:hover .yellow-drop-content{
+    display: block;
+    transition: all 2s ease-in;
+}
+
+.yellow-work .line-yellow-work{
+    position: relative;
+    top: -44%;
+    left: 107%;
+    height: 4px;
+    width: 70%;
+    background: linear-gradient(to right, red, yellow, green);
+}
+
+.green-work{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    position: relative;
+    top: -29.5%;
+    left: 74%;
+    outline: 20px solid rgba(0, 0, 0, 0.366);
+    box-shadow: 3px 3px 3px solid black;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+
+.green-work:hover {
+    background-color: rgba(0, 128, 0, 0.431);
+    text-shadow: 2px 2px 4px rgb(255, 254, 254);
+    transition: all 1s ease;
+}
+
+.green-work .green-drop-content{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: -0%;
+    min-width: 300px;
+    text-align: justify;
+    z-index: 1;
+}
+
+
+.green-drop-content h1{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 128, 0, 0.5), -2px -2px 4px rgba(0, 128, 0, 0.5);
+    text-decoration: underline;
+}
+
+.green-drop-content div{
+    color: black;
+}
+
+.green-work:hover .green-drop-content{
+    display: block;
+    transition: all 2s ease-in;
+}

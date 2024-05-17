@@ -1,0 +1,237 @@
+.service-container {
+    height: 100vh;
+    width: 75% !important;
+    position: absolute;
+    left: 12.5%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 20px;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.service-container.active{
+    transition: all 1s ease;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.fr-service-1,
+.fr-service-2,
+.fr-service-3,
+.fr-service-4,
+.fr-service-5,
+.fr-service-6 {
+    border-radius: 12px;
+    background-color: rgba(11, 209, 240, 0.135);
+    box-shadow: .8px rgba(11, 209, 240, 0.135);
+    cursor: pointer;
+    transition: transform 0.5s; /* Add transition for smooth animation */
+    transform-style: preserve-3d;
+}
+
+.fr-service-1:hover, .fr-service-2:hover, .fr-service-3:hover, .fr-service-4:hover, .fr-service-5:hover, .fr-service-6:hover{
+    transform: rotateY(25deg);
+}
+
+
+
+.service-container .fr-service-1 img,
+.fr-service-2 img,
+.fr-service-3 img,
+.fr-service-4 img,
+.fr-service-5 img,
+.fr-service-6 img {
+    height: 120px;
+    width: auto;
+}
+
+.fr-service-5 img{
+    height: 120px;
+    width: auto;
+}
+
+.fr-service-2,
+.fr-service-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+}
+
+.fr-service-2 img,
+.fr-service-5 img {
+    margin-top: 20px;
+}
+
+.fr-service-1 img,
+.fr-service-3 img,
+.fr-service-4 img,
+.fr-service-6 img {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.fr-service-2 h2 {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.fr-service-5 h2 {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.fr-service-1 h2,
+.fr-service-3 h2,
+.fr-service-3 h2,
+.fr-service-4 h2,
+.fr-service-6 h2 {
+    margin-top: 0px auto;
+    margin-left: 20px;
+}
+
+.fr-service-1 .taxprepration-content {
+    width: 85%;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.fr-service-1 .button-taxPrepration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 20px 0px 20px;
+}
+
+.button-taxPrepration .a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 22px;
+}
+
+.taxadvisore-content {
+    width: 85%;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.button-taxAdvisore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 20px 0px 20px;
+}
+
+.button-taxAdvisore .a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 22px;
+}
+
+.fr-service-3 .taxcompliance-content {
+    width: 85%;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.button-taxcompliance {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 58px 20px 0px 20px;
+}
+
+.button-taxcompliance .a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 22px;
+}
+
+.fr-service-4 .IRSservice-content {
+    width: 85%;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.button-IRSservice-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 20px 0px 20px;
+}
+
+.button-IRSservice-content .a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 22px;
+}
+
+.fr-service-5 .Internationaltax-content {
+    width: 85%;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.button-Internationaltax {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 20px 0px 20px;
+}
+
+.button-Internationaltax .a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 22px;
+}
+
+.fr-service-6 .taxplanservice-content{
+    width: 85%;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.button-taxplanservice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 20px 0px 20px;
+}
+
+.button-taxplanservice .a{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    font-weight: bold;
+}

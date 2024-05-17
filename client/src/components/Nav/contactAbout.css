@@ -1,0 +1,87 @@
+
+.contact-support{
+    height: 5em;
+}
+
+.contact-container {
+    padding: 10px 22px;
+    background-color: rgba(0, 128, 0, 0.93);
+    outline: 1.2px solid #007f00;
+    width: max-content;
+    border-radius: 6px;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    z-index: 999;
+    transition: all .8s ease;
+}
+
+.contact-container a {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.scrollcontainer {
+    position: fixed;
+    top: 40%;
+    right: -3%;
+    rotate: 270deg;
+    transition: all .5s ease-in-out;
+}
+
+.contact-support-content{
+    margin-right: 5%;
+    float: inline-end;
+    height: 40vh;
+    width: max-content;
+}
+
+.contact-support-content form{
+    display: grid;
+    grid-template-columns: auto 2fr;
+    gap: 15px;
+}
+
+.headerNavigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: green;
+}
+
+.headerNavigation ion-icon{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.contact-support-content form input{
+    padding: 6px 18px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+}
+
+.contact-support-content form button{
+    padding: 6px 18px;
+    font-size: 18px;
+    background: transparent !important;
+    color: green;
+    outline: 1px solid green;
+    border: none;
+    cursor: pointer;
+}
+
+#hide-content{
+    position: static;
+    background-color: black;
+    color: white;
+}
+
+.hideEnquiry{
+    position: fixed;
+}

@@ -1,0 +1,10 @@
+.home{
+    height: 488vh;
+    width: 100%;
+}
+
+.backGrond-container{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent !important;
+}
